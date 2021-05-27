@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Random Number 0..30</h2>
+
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,30)">Generate Number</button>
+
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+</body>
+</html>
